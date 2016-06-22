@@ -660,7 +660,7 @@ def dictionary(word):
 		#if received, then i++
 
 
-def main():
+if __name__ == "__main__":
 	#espeak.synth("show me an end point of book")
 	#time.sleep(5)
 	#page(400,0)
@@ -670,5 +670,3 @@ def main():
 	if crop_img is not 0:
 		s=ocr(crop_img)
 		dictionary(s)
-
-main()
