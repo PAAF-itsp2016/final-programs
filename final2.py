@@ -204,8 +204,8 @@ def page (t,stop):
 		        
 
 	
-	camera.release()
-	cv2.destroyAllWindows()
+	
+	
 	return 
 
 
