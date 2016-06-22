@@ -176,16 +176,16 @@ def page (t,stop):
 				espeak.synth("now show me the diagonally opposite corner")
 				time.sleep(4)
 				# cleanup the camera and close any open windows
-				camera.release()
-				cv2.destroyAllWindows()
-				page(400 ,1);
-				break
-			if stop == 1:
-				espeak.synth("the camera is ready to be used")
+				t = 300
+				stop = 1
 				
-				time.sleep(5)
-				camera.release()
-				cv2.destroyAllWindows()
+				
+			elif stop == 1:
+				
+				
+				espeak.synth("the camera is ready to be used")
+				time.sleep(4)
+				
 				break
 			
 			
@@ -199,14 +199,15 @@ def page (t,stop):
 			
 			espeak.synth("that endpoint is not visible to me,please try again")
 			time.sleep(4)
-			camera.release()
-			cv2.destroyAllWindows()
-			page(400,stop);
-			break
+			
+			t = 250
 		        
 
 	
-	return
+	camera.release()
+	cv2.destroyAllWindows()
+	return 
+
 
 
 
